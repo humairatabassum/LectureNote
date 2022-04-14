@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#D6AEE1"
+    tools:context=".NoteDetailsActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note Details"
+        android:layout_margin="10dp"
+        android:padding="25dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Create your class lecture note here "
+        android:textSize="16sp"
+        android:textColor="#615567"
+        android:textStyle="bold"
+        android:gravity="top|center"/>
+
+
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:padding="16dp"
+            android:background="#E9CBF1">
+
+            <TableRow>
+                <TextView
+                    android:text="Course Id :"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:id="@+id/etCourseId"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginVertical="15dp"
+                    android:inputType="textPersonName"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Topic Name :"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="15dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:id="@+id/etTopic"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginVertical="15dp"
+                    android:inputType="textPersonName"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Date &amp; Time :"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:id="@+id/etDateTime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginBottom="15dp"
+                    android:inputType="datetime"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Description :"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="15dp"
+                    android:inputType="textMultiLine"
+                    android:lines="3"/>
+            </TableRow>
+
+
+
+        </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="40dp">
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Save"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/purple_200"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Cancel"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/purple_200"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
